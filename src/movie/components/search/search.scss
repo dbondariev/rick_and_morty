@@ -1,0 +1,39 @@
+@import '../../../breakpoints.scss';
+@import 'src/variables.scss';
+.search {
+  width: 760px;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 60px;
+
+  &__line-svg {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  &__line {
+    position: relative;
+    margin-top: 16px;
+  }
+  &__line-input {
+    width: 100%;
+    height: 56px;
+    border: $border-search;
+    border-radius: $br-ls;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 38px 16px;
+    cursor: pointer;
+  }
+  &__line-input::placeholder {
+    color: $color-dark;
+    opacity: 0.5;
+    font-weight: 300;
+  }
+  &__line-input:focus {
+    outline: 0;
+  }
+}

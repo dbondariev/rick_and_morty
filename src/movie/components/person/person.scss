@@ -1,0 +1,95 @@
+@import '../../../breakpoints.scss';
+@import 'src/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+.person-navigation {
+  width: 100%;
+  padding-top: 23px;
+
+  a {
+    text-decoration: none;
+    margin-left: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: $color-dark;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    @include for-tablet-up {
+      margin-left: 54px;
+    }
+  }
+  span {
+    line-height: 21px;
+    margin-left: 12px;
+  }
+}
+.person-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.person-img {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  flex: 0 1 0;
+  &__photo {
+    max-height: 300px;
+    border-radius: 50%;
+    max-width: 100%;
+    border: $border-photo;
+    box-sizing: content-box;
+  }
+}
+.person-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 11px;
+  margin-bottom: 142px;
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: $color-dark-gray;
+  }
+  &__sub-title {
+    align-items: center;
+    letter-spacing: 0.15px;
+    color: $color-gray;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 48px;
+  }
+}
+.person-data {
+  max-width: 413px;
+  width: 100%;
+  margin: 48px 0 0;
+  &__block {
+    text-align: left;
+    padding: 9px 16px 0;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $color-dark-gray;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: $color-main;
+    padding-bottom: 12px;
+    border-bottom: $border-line;
+  }
+}

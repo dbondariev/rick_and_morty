@@ -1,6 +1,6 @@
 <h1>Rick & Morty</h1>
 
-<h2><a href="" rel="nofollow">Live Demo</a></h2>
+<h2><a href="https://snazzy-kulfi-d73d17.netlify.app/" rel="nofollow">Live Demo</a></h2>
 
 <h3>Design:</h3>
 
